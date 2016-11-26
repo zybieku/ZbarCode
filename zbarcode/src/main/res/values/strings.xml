@@ -1,0 +1,11 @@
+<resources>
+    <string name="qr_name">二维码</string>
+    <string name="i_know">我知道了</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="permission">抱歉,你的%1$s权限没有打开,无法正常服务
+        \n请点击”设置”->在应用程序中找到”popon”->权限管理->%2$s->”允许”即可 </string>
+    <string name="low_permission">\n 或者点击”手机管家”->权限管理->%1$s->”允许”即可 </string>
+    <string name="camera">摄像头(相机)</string>
+    <string name="loading">加载中…</string>
+</resources>
