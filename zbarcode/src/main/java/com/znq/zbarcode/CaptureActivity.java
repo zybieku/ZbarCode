@@ -44,7 +44,6 @@ import java.lang.reflect.Method;
 public class CaptureActivity extends Activity implements SurfaceHolder.Callback {
     private static final int MY_PERMISSIONS_REQUEST_CAMERA = 26;
     public static final String EXTRA_STRING = "extra_string";
-    public static final String EXTRA_TYPE = "extra_type";
     public static final int TYPE_BOOK_COVER = 0x101;
     public static final int TYPE_BOOK_CHAPTER = 0x102;
     private static final String TAG = "CaptureActivity";
@@ -284,24 +283,6 @@ public class CaptureActivity extends Activity implements SurfaceHolder.Callback 
 
     private void activityResult(String result) {
         if (!isFinishing()) {
-            String lastStr = result.substring(result.lastIndexOf("/") + 1);
-            if (result.contains("book/cover")) {
-                Intent intent = new Intent();
-                intent.putExtra(EXTRA_STRING, lastStr);
-                intent.putExtra(EXTRA_TYPE, TYPE_BOOK_COVER);
-                setResult(RESULT_OK, intent);
-                CaptureActivity.this.finish();
-                return;
-            } else if (result.contains("book/chapter")) {
-                Intent intent = new Intent();
-                intent.putExtra(EXTRA_STRING, lastStr);
-                intent.putExtra(EXTRA_TYPE, TYPE_BOOK_CHAPTER);
-                setResult(RESULT_OK, intent);
-                CaptureActivity.this.finish();
-                return;
-            }
-
-            //处理非APP二维码
             Bundle bundle = new Bundle();
             Intent resultIntent = new Intent(this, ResultsActivity.class);
             bundle.putInt("width", mCropRect.width());
