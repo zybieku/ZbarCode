@@ -29,6 +29,7 @@ Intent intent1 = new Intent(MainActivity.this, CaptureActivity.class);
     }
 ```
 
+喜欢的大佬们别忘了点个Star哦
 
 ## 源码分析
 ###ZbarCode结构
@@ -71,3 +72,4 @@ CaptureActivity->CameraManager:失败,重新回调图像数据,进行解码
 
 
 ----------
+#博客  www.znq123.cn
