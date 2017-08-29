@@ -2,7 +2,7 @@
 用Zbar库实现的Android扫一扫
  - **集成**: 
 
-下载打开源码项目,找到里面的箭头扫一扫Module
+下载打开源码项目,大佬可以先运行看下效果,如果需集成,就使用箭头得扫一扫Module
  
 ![这里写图片描述](https://github.com/zybieku/ZbarCode/blob/master/image/demo.png)
 
