@@ -28,7 +28,7 @@ Intent intent1 = new Intent(MainActivity.this, CaptureActivity.class);
         }
     }
 ```
-
+> 大佬根据自己的cpu so文件进行过滤,多余的so需要自己删掉
 > 喜欢的大佬们别忘了点个Star哦
 
 
