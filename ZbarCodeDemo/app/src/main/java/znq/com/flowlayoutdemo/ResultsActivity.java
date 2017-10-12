@@ -106,6 +106,9 @@ public class ResultsActivity extends Activity {
         @Override
         public void onPageFinished(WebView view, String url) {
             super.onPageFinished(view, url);
+            if (null == _dialog){
+                return;
+            }
             _dialog.dismiss();
         }
 
