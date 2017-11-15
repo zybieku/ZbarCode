@@ -27,8 +27,9 @@ Intent intent1 = new Intent(MainActivity.this, CaptureActivity.class);
 
 @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
- super.onActivityResult(requestCode, resultCode, data);
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == QR_CODE) {
+	if(null==data) return;
             Bundle b=data.getExtras();
             String result = b.getString(CaptureActivity.EXTRA_STRING);
             Toast.makeText(this, result + "", Toast.LENGTH_SHORT).show();
