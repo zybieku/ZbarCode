@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ZabarDemo.iml" filepath="$PROJECT_DIR$/ZabarDemo.iml" />
+      <module fileurl="file://E:\znq\ZbarCode\ZabarDemo\ZabarDemo.iml" filepath="E:\znq\ZbarCode\ZabarDemo\ZabarDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://E:\znq\ZbarCode\ZabarDemo\app\app.iml" filepath="E:\znq\ZbarCode\ZabarDemo\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/zbarcode/zbarcode.iml" filepath="$PROJECT_DIR$/zbarcode/zbarcode.iml" />
     </modules>
   </component>
