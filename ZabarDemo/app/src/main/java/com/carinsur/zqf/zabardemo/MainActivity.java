@@ -1,4 +1,4 @@
-package znq.com.flowlayoutdemo;
+package com.carinsur.zqf.zabardemo;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,9 +9,7 @@ import android.widget.Toast;
 import com.znq.zbarcode.CaptureActivity;
 
 public class MainActivity extends AppCompatActivity {
-
     private int QR_CODE =1;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == QR_CODE&&resultCode==RESULT_OK) {
+            if(null==data) return;
             Bundle b=data.getExtras();
             String result = b.getString(CaptureActivity.EXTRA_STRING);
             Toast.makeText(this, result + "", Toast.LENGTH_SHORT).show();
@@ -37,4 +36,5 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
 }

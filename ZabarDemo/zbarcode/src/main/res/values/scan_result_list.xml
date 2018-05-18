@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="scan_result_lists">
+        <!--扫描封面-->
+        <item>http://gopopon.com/book/cover/1</item>
+
+    </array>
+</resources>

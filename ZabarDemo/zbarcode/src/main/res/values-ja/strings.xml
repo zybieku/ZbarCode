@@ -1,0 +1,11 @@
+<resources>
+    <string name="qr_name">QRCode</string>
+    <string name="i_know">OK</string>
+    <string name="setting">Setting</string>
+    <string name="cancel">Cancel</string>
+     <string name="permission">Allow popon to access your %1$s from device menu:
+“Settings” ->popon->“Privacy” ->%2$s </string>
+    <string name="low_permission">\n%1$s </string>
+    <string name="camera">camera</string>
+    <string name="loading">loading…</string>
+</resources>
